@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui;
+    background: #1a261a;
+    color: #fff;
+}
+
+input,
+button {
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+input,
+button {
+    border: none;
+    background: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.page-heading {
+    font-size: 24px;
+}
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.input,
+.submit-btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    font-weight: 600;
+}
+
+.input {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.submit-btn {
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.task-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ea9652;
+}
+
+.task-item.completed {
+    opacity: 0.6;
+}
+
+.task-item.completed .task-title {
+    text-decoration: line-through;
+}
+
+.task-title {
+    flex: 1;
+}
+
+.task-action {
+    display: flex;
+    gap: 16px;
+}
+
+.task-btn {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.task-btn.edit {
+    color: #50ad7e;
+}
+
+.task-btn.done {
+    color: #ea9652;
+}
+
+.task-btn.delete {
+    color: #a13538;
+}
+
+.task-btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
